@@ -1,20 +1,34 @@
-table{
-    box-sizing: content-box;
-    display: inline-block;
+.table{
+    display:grid;
+    width: 50%;
+    height: 50vh;
+    border: 1px solid black;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    border-radius: 20px;
 }
-td{
-    background-color:gold;
-    width: 100px;
-    height: 100px;
-    padding: 0px;
+.table *{
+    border: solid 1px black;
+    background-color: blanchedalmond;
 }
-button{
-    width: inherit;
-    height: inherit;
-    background-color: burlywood;
-    margin: 0%;
-    padding: 0;
+.cor1{
+    border-top-left-radius: 20px;
 }
-div{
-    text-align: center;
+.cor2{
+    border-top-right-radius: 20px;
+}
+.cor3{
+    border-bottom-left-radius: 20px;
+}
+.cor4{
+    border-bottom-right-radius: 20px;
+}
+.cell{
+    cursor:crosshair;
+    position: relative;
+}
+img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
 }
